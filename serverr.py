@@ -220,7 +220,7 @@ bgmi_cooldown = {}
 COOLDOWN_TIME =0
 
 # Handler for /attack2 command
-@bot.message_handler(commands=['attack'])
+@bot.message_handler(commands=['bgmi'])
 def handle_bgmi(message):
     user_id = str(message.chat.id)
     if user_id in allowed_user_ids:
